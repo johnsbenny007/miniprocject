@@ -1,0 +1,38 @@
+.Banner{
+    display: flex;
+    top:10px;
+    margin-top:100px;
+    margin-left: 10px;
+}
+.Banner-container_1{
+    margin-right: 10px;
+    margin-left:225px;
+}
+.Banner-container_1 h1{
+    font-size: 50px;
+}
+.h1_1{
+    color:blueviolet;
+    
+}
+.Banner-container_1 p{
+
+
+margin-top: 13px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 31px;
+}
+.Banner-container_1 button{
+    border-radius: 43px;
+    width:200px;
+    height: 50px;
+    border:none;
+    background-color: blueviolet;
+    margin-top:15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}

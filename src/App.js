@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import Tools from './Tools';
 import './App.css';
+import React,{useState,useEffect} from 'react';
+import {BrowserRouter as Router,Switch,Route,Routes} from 'react-router-dom';
+import Home from './Home';
+import Text_to_audio from './Text_to_audio';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route  path='/'  element={[<Home/>]}/> 
+          <Route path='/tools' element={<Tools/>}/>
+          <Route path='/text' element={<Text_to_audio/>}/>
+          
+        </Routes>
+         
+      </div>
+    </Router>
   );
 }
 
